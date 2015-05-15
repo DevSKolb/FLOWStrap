@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>FLOWStrap Resonsive Grid</title>
+  <meta name="description" content="FLOWStrap Resonsive Grid">
+  <meta name="author" content="Silvan Kolb">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+<!--  
+  <link rel="shortcut icon" href="images/favicon.jpg" />
+-->  
+  <!-- FLOWStrap Responsive grid -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/flowstrap-responsive.css" />
+  <!-- End of FLOWStrap Responsive grid -->
+
+<style>
+
+body {  background: url(images/brillant.png);
+  overflow-x: hidden;
+  }
+/*
+ * BODY, HTML
+ */                                                                          
+body, html { 
+	font : 100%/1.4 'lucida sans unicode', arial, verdana helvetica, helve, sans-serif; 	
+}
+ul, ol {
+  font-size: 1em;
+  margin: 0 0 10px 25px;
+  padding: 0;
+}
+
+blockquote:not(.quote) {
+  border-left: 5px solid #EEEEEE;
+}
+blockquote {
+  font-family: Consolas,monospace,serif;
+  font-size: .8em;
+}
+blockquote {
+    margin-bottom: 5px;
+}
+
+blockquote {
+    padding: 0 0 0 15px;
+}
+
+blockquote:not(.quote)  {
+    border-left: 5px solid #EEEEEE;
+}    
+blockquote p {
+    font-size: 17.5px;
+    font-weight: 300;
+    line-height: 1.25;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+blockquote small:before {
+    content: "— ";
+}
+
+blockquote small {
+    font-size: 0.8em;
+    color: #999999;
+    line-height: 20px;
+}
+
+blockquote.quote:before {
+	display: block;
+	content: "\201C";
+	font-size: 40px;
+	position: absolute;
+	left: 15px;
+	top: 22px;
+	color: #7a7a7a;
+    border: 0;
+}
+
+cite {
+    font-style: normal;
+}
+
+p, dl, multicol {
+    display: block;
+}
+/*
+ * Headlines
+ */         
+h1, h2, h3, h4, h5, h6, p, blockquote, article, section, address {
+    -moz-font-feature-settings: inherit;
+    -moz-font-language-override: inherit;
+    font-size-adjust: inherit;
+    font-stretch: inherit;
+    font-style: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    vertical-align: baseline;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: inherit;
+  font-family: "ProximaNovaLight","Helvetica Neue",Helvetica,Arial,sans-serif;
+  line-height: 1.5;
+  margin: 15px 0;
+  text-rendering: optimizelegibility;
+}                                                                 
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+h4 {
+  font-size: 1.0em;
+}
+
+h5 {
+  font-size: 0.83em;
+}
+
+h6 {
+  font-size: 0.67em;
+}
+
+.header {
+
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: #242853;
+  color: #f6f6f6;
+  max-height: 550px;
+}
+
+.fs-centered {
+	text-align:center;
+  	width:100%; 
+}
+.fs-top-10 { margin-top: 10px;  }    
+.fs-top-20 { margin-top: 20px;  }    
+.fs-top-30 { margin-top: 30px;  }    
+.fs-top-40 { margin-top: 40px;  }    
+.fs-top-50 { margin-top: 50px;  }    
+.fs-top-60 { margin-top: 60px;  }    
+.fs-top-70 { margin-top: 70px;  }    
+.fs-top-80 { margin-top: 80px;  }    
+.fs-top-90 { margin-top: 90px;  }    
+.fs-top-100{ margin-top: 100px; }    
+
+.fs-bottom-10 { margin-bottom: 10px;  }    
+.fs-bottom-20 { margin-bottom: 20px;  }    
+.fs-bottom-30 { margin-bottom: 30px;  }    
+.fs-bottom-40 { margin-bottom: 40px;  }    
+.fs-bottom-50 { margin-bottom: 50px;  }    
+.fs-bottom-60 { margin-bottom: 60px;  }    
+.fs-bottom-70 { margin-bottom: 70px;  }    
+.fs-bottom-80 { margin-bottom: 80px;  }    
+.fs-bottom-90 { margin-bottom: 90px;  }    
+.fs-bottom-100{ margin-bottom: 100px; }
+
+.fs-pb-10 { padding-bottom: 10px;  }    
+.fs-pb-20 { padding-bottom: 20px;  }    
+.fs-pb-30 { padding-bottom: 30px;  }    
+.fs-pb-40 { padding-bottom: 40px;  }    
+.fs-pb-50 { padding-bottom: 50px;  }    
+.fs-pb-60 { padding-bottom: 60px;  }    
+.fs-pb-70 { padding-bottom: 70px;  }    
+.fs-pb-80 { padding-bottom: 80px;  }    
+.fs-pb-90 { padding-bottom: 90px;  }    
+.fs-pb-100{ padding-bottom: 100px; }
+
+
+.lead {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0,0,0,.1);
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+
+  font-size: 30px;
+  text-align:center;
+}
+
+.fs-btn-transparent {
+	color: #fff;
+	background-color: transparent;
+	border: 1px solid #cdbfe3;
+	padding:10px;
+	border-radius:5px;
+	font-size: 20px;
+}
+
+
+ol.linenums {
+	margin: 0 0 0 5px;
+} 
+ol.linenums li {
+	color: #bebec5;
+  	text-shadow: 0 1px 0 #fff;
+}
+li.L1, li.L3, li.L5, li.L7, li.L9 {
+    background: #fcfcfc;
+}
+
+pre.prettyprint { 
+	padding: 5px 0 5px;
+	border: 1px solid #DEDEDE;
+	overflow: auto;
+	margin: 20px 0 0 0;
+	display: inline-block;
+	width: 100%;
+}
+.examples .content {
+	background: #DADADA;
+	color: #444;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.examples .content:hover {
+	background: #c2c2c2;
+}
+
+.fs-box-sample:after {
+    background-color: #F5F5F5;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 0 4px 0;
+    color: #9DA0A4;
+    content: "Example";
+    font-size: 12px;
+    font-weight: normal;
+    left: -1px;
+    padding: 3px 7px;
+    position: absolute;
+    top: -1px;
+}
+.fs-box-sample {
+    background-color: #FFFFFF;
+    border: 1px solid #DDDDDD;
+    border-radius: 4px 4px 4px 4px;
+    margin: 15px 0;
+    padding: 39px 19px 14px;
+    position: relative;
+    color: #333;
+    
+}
+.fs-container {color: #5A5A5A;}
+
+
+.fs-grid-gray{
+ 
+ background: none repeat scroll 0 0 #EDEDED;
+    border: 1px solid #888888;
+ color: #777;
+    font-size: 0.9em;
+    padding: 5px 0;
+
+    
+ }
+.subheader {margin-right: auto;
+  margin-left: auto;  font-size: 20px;font-weight: 300; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;;
+  line-height: 1.4}
+
+.subheader16 {margin-right: auto;
+  margin-left: auto;  font-size: 16px;font-weight: 300; font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;;
+  line-height: 1.4}
+
+
+
+.e-10{margin-left:10px;}
+.e-20{margin-left:20px;}
+.e-30{margin-left:30px;}
+.e-40{margin-left:40px;}
+.e-50{margin-left:50px;}
+
+.fs-line-grey {border-top:1px solid #ccc;}
+
+
+
+</style>
+
+  <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+</head>
+<body>
+  
+  
+  <div class="header fs-pb-50">
+  
+  	<div class="row">
+      <div class="col fs-centered fs-top-50">
+      	<img src="images/fs-icon.png">
+      </div>
+    </div>
+
+  	<div class="row">
+      <div class="col fs-centered lead fs-top-10">
+      	<span>FLOWStrap</span>
+      </div>
+    </div>
+
+  
+  </div>	
+
+  <div class="container ">
+
+  	<div class="row">
+  	  <div class="col fs-centered fs-top-40 fs-pb-20">
+  	  	<h1>CONTENT COLUMNS</h1>
+  	  </div>
+  	</div>
+
+<!----------------------------------------------------------------
+  1 col grid system
+  ----------------------------------------------------------------->
+    <div class="row">
+    	<div class="col span-12">
+    		<p class="fs-grid-gray fs-centered">span-12</p>
+    	</div>      
+    </div>
+    
+
+<!----------------------------------------------------------------
+  2 col grid system
+  ----------------------------------------------------------------->
+    <div class="row">
+    	<div class="col span-6">
+    		<p class="fs-grid-gray fs-centered">span-6</p>
+    	</div>      
+    	<div class="col span-6">
+    		<p class="fs-grid-gray fs-centered">span-6</p>
+    	</div>      
+    </div>
+    
+
+  
+<!----------------------------------------------------------------
+  3 col grid system
+  ----------------------------------------------------------------->    
+    <div class="row">
+    	<div class="col span-4">
+    		<p class="fs-grid-gray fs-centered">span-4</p>
+    	</div>      
+    	<div class="col span-4">
+    		<p class="fs-grid-gray fs-centered">span-4</p>
+    	</div>      
+    	<div class="col span-4">
+    		<p class="fs-grid-gray fs-centered">span-4</p>
+    	</div>      
+    </div>
+    
+
+
+<!----------------------------------------------------------------
+  examples: combinations grid system
+  ----------------------------------------------------------------->    
+ 
+  	<div class="row">
+  	  <div class="col fs-centered fs-top-50 fs-pb-20">
+  	  	<h1>COMBINATION COLUMNS</h1>
+  	  </div>
+  	</div>
+
+    <div class="row">
+    	<div class="col span-1">
+    		<p class="fs-grid-gray fs-centered">span-1</p>
+    	</div>
+      <div class="col span-11">
+      	<p class="fs-grid-gray fs-centered">span-11</p>
+      </div>
+    </div>
+
+    <div class="row ">
+    	<div class="col span-1">
+    		<p class="fs-grid-gray fs-centered">span-1</p>
+    	</div>
+    	<div class="col span-1">
+    		<p class="fs-grid-gray fs-centered">span-1</p>
+    	</div>
+    	<div class="col span-1">
+    		<p class="fs-grid-gray fs-centered">span-1</p>
+    	</div>
+    	<div class="col span-1">
+    		<p class="fs-grid-gray fs-centered">span-1</p>
+    	</div>
+    	<div class="col span-1">
+    		<p class="fs-grid-gray fs-centered">span-1</p>
+    	</div>
+    	<div class="col span-1">
+    		<p class="fs-grid-gray fs-centered">span-1</p>
+    	</div>
+    	<div class="col span-1">
+    		<p class="fs-grid-gray fs-centered">span-1</p>
+    	</div>
+    	<div class="col span-1">
+    		<p class="fs-grid-gray fs-centered">span-1</p>
+    	</div>
+    	<div class="col span-1">
+    		<p class="fs-grid-gray fs-centered">span-1</p>
+    	</div>
+    	<div class="col span-1">
+    		<p class="fs-grid-gray fs-centered">span-1</p>
+    	</div>
+    	<div class="col span-1">
+    		<p class="fs-grid-gray fs-centered">span-1</p>
+    	</div>
+    	<div class="col span-1">
+    		<p class="fs-grid-gray fs-centered">span-1</p>
+    	</div>
+    </div>
+
+    <div class="row">
+    	<div class="col span-2">
+    		<p class="fs-grid-gray fs-centered">span-2</p>
+    	</div>
+      <div class="col span-10">
+      	<p class="fs-grid-gray fs-centered">span-10</p>
+      </div>
+    </div>
+
+    <div class="row">
+    	<div class="col span-2">
+    		<p class="fs-grid-gray fs-centered">span-2</p>
+    	</div>
+    	<div class="col span-2">
+    		<p class="fs-grid-gray fs-centered">span-2</p>
+    	</div>
+    	<div class="col span-2">
+    		<p class="fs-grid-gray fs-centered">span-2</p>
+    	</div>
+    	<div class="col span-2">
+    		<p class="fs-grid-gray fs-centered">span-2</p>
+    	</div>
+    	<div class="col span-2">
+    		<p class="fs-grid-gray fs-centered">span-2</p>
+    	</div>
+    	<div class="col span-2">
+    		<p class="fs-grid-gray fs-centered">span-2</p>
+    	</div>
+    </div>
+
+    <div class="row">
+    	<div class="col span-3">
+    		<p class="fs-grid-gray fs-centered">span-3</p>
+    	</div>
+      <div class="col span-9">
+      	<p class="fs-grid-gray fs-centered">span-9</p>
+      </div>
+    </div>
+
+    <div class="row">
+    	<div class="col span-3">
+    		<p class="fs-grid-gray fs-centered">span-3</p>
+    	</div>
+    	<div class="col span-3">
+    		<p class="fs-grid-gray fs-centered">span-3</p>
+    	</div>
+    	<div class="col span-3">
+    		<p class="fs-grid-gray fs-centered">span-3</p>
+    	</div>
+    	<div class="col span-3">
+    		<p class="fs-grid-gray fs-centered">span-3</p>
+    	</div>
+    </div>
+
+    <div class="row">
+    	<div class="col span-4">
+    		<p class="fs-grid-gray fs-centered">span-4</p>
+    	</div>
+      <div class="col span-8">
+      	<p class="fs-grid-gray fs-centered">span-8</p>
+      </div>
+    </div>
+
+    <div class="row">
+    	<div class="col span-4">
+    		<p class="fs-grid-gray fs-centered">span-4</p>
+    	</div>
+    	<div class="col span-4">
+    		<p class="fs-grid-gray fs-centered">span-4</p>
+    	</div>
+    	<div class="col span-4">
+    		<p class="fs-grid-gray fs-centered">span-4</p>
+    	</div>
+    </div>
+
+    <div class="row">
+    	<div class="col span-5">
+    		<p class="fs-grid-gray fs-centered">span-5</p>
+    	</div>
+      <div class="col span-7">
+      	<p class="fs-grid-gray fs-centered">span-7</p>
+      </div>
+    </div>
+
+    <div class="row">
+    	<div class="col span-6">
+    		<p class="fs-grid-gray fs-centered">span-6</p>
+    	</div>
+      <div class="col span-6">
+      	<p class="fs-grid-gray fs-centered">span-6</p>
+      </div>
+    </div>
+  </div>
+
+<!----------------------------------------------------------------
+  examples: centered grid system
+  ----------------------------------------------------------------->    
+ 
+  	<div class="row">
+  	  <div class="col fs-centered fs-top-50 fs-pb-20">
+  	  	<h1>CENTERED COLUMNS</h1>
+   	    <div class="col span-9 centered">
+    		<div class="fs-centered subheader">Elements can be specified centered.</div>
+    	</div>	  	  
+	</div></div>
+
+    
+	<!-- Centered Grid System -->
+	<div class="container">
+	   <div class="row">
+    	<div class="col span-12 centered">
+    		<p class="fs-grid-gray fs-centered">12 Columns</p>
+    	</div>
+    	<div class="col span-11 centered">
+    		<p class="fs-grid-gray fs-centered">11 Columns</p>
+    	</div>
+    	<div class="col span-10 centered">
+    		<p class="fs-grid-gray fs-centered">10 Columns</p>
+    	</div>
+    	<div class="col span-9 centered">
+    		<p class="fs-grid-gray fs-centered">9 Columns</p>
+    	</div>
+    	<div class="col span-8 centered">
+    		<p class="fs-grid-gray fs-centered">8 Columns</p>
+    	</div>
+    	<div class="col span-7 centered">
+    		<p class="fs-grid-gray fs-centered">7 Columns</p>
+    	</div>
+    	<div class="col span-6 centered">
+    		<p class="fs-grid-gray fs-centered">6 Columns</p>
+    	</div>
+    	<div class="col span-5 centered">
+    		<p class="fs-grid-gray fs-centered">5 Columns</p>
+    	</div>
+    	<div class="col span-4 centered">
+    		<p class="fs-grid-gray fs-centered">4 Columns</p>
+    	</div>
+    	<div class="col span-3 centered">
+    		<p class="fs-grid-gray fs-centered">3 Columns</p>
+    	</div>
+    	<div class="col span-2 centered">
+    		<p class="fs-grid-gray fs-centered">2 Columns</p>
+    	</div>
+    	<div class="col span-1 centered">
+    		<p class="fs-grid-gray fs-centered">1 Columns</p>
+    	</div>
+    	</div>
+	 </div>
+	<!-- Centered Grid System -->
+
+
+<!----------------------------------------------------------------
+  examples: GRID NESTING
+  ----------------------------------------------------------------->    
+ 
+  	<div class="row">
+  	  <div class="col fs-centered fs-top-50 fs-pb-20">
+  	  	<h1>NESTING STACKY GRID</h1>
+   	    <div class="col span-9 centered">
+    		<div class="fs-centered subheader">Elements can be nested arbitrarily, based on 12 columns. Within an element in turn applies the 12 column rule.</div>
+    	</div>	  	  
+  	  	</div></div>
+
+
+<!----------------------------------------------------------------
+  examples: GRID NESTING
+  -----------------------------------------------------------------> 
+
+<div id="page_wraps" class="container">
+
+  <div class="row mt10">
+  
+    <div class="col span-4 border">		 
+		 <div class="col span-6 box-inline alpha">
+			<p class="fs-grid-gray fs-centered">span-4</p>
+		</div>
+		<div class="col span-6 box-inline omega">
+			<p class="fs-grid-gray fs-centered">span-6</p>
+		</div>
+		<p class="fs-grid-gray fs-centered">span-4</p>
+	</div>
+	<div class="col span-8 border">	
+		<div class="col span-3  box-inline alpha">
+			<p class="fs-grid-gray fs-centered">span-3</p>
+		</div>
+		<div class="col span-3 box-inline">
+			<p class="fs-grid-gray fs-centered">span-3</p>
+		</div>
+		<div class="col span-3 box-inline">
+			<p class="fs-grid-gray fs-centered">span-3</p>
+		</div>
+		<div class="col span-3 box-inline omega">
+			<p class="fs-grid-gray fs-centered">span-3</p>
+		</div>
+		<p class="fs-grid-gray fs-centered">span-8</p>
+	</div>
+	
+  </div>
+  
+   <div class="row mt10">
+
+	<div class="col span-7 border">		
+		<div class="col span-7 box-inline alpha">
+			<p class="fs-grid-gray fs-centered">span-7</p>
+		</div>
+		<div class="col span-5 box-inline omega">
+			<p class="fs-grid-gray fs-centered">span-5</p>
+		</div>
+		
+		<div class="col span-4 box-inline alpha">
+			<p class="fs-grid-gray fs-centered">span-4</p>
+		</div>
+		<div class="col span-4 box-inline">
+			<p class="fs-grid-gray fs-centered">span-4</p>
+		</div>
+		<div class="col span-4 box-inline omega">
+			<p class="fs-grid-gray fs-centered">span-4</p>
+		</div>				
+		<p class="fs-grid-gray fs-centered">span-7</p>
+	</div>
+	
+	<div class="col span-5 border">		
+		<div class="col span-4 box-inline alpha">
+			<p class="fs-grid-gray fs-centered">span-4</p>
+		</div>
+		<div class="col span-4 box-inline">
+			<p class="fs-grid-gray fs-centered">span-4</p>
+		</div>
+		<div class="col span-4 box-inline  omega">
+			<p class="fs-grid-gray fs-centered">span-4</p>
+		</div>
+		
+		<div class="col span-4 box-inline alpha">
+			<p class="fs-grid-gray fs-centered">span-4</p>
+		</div>
+		<div class="col span-4 box-inline">
+			<p class="fs-grid-gray fs-centered">span-4</p>
+		</div>
+		<div class="col span-4 box-inline omega">
+			<p class="fs-grid-gray fs-centered">span-4</p>
+		</div>		
+		<p class="fs-grid-gray fs-centered">span-5</p>
+	</div>	
+
+</div>
+
+
+<!----------------------------------------------------------------
+  examples: PUSH THE GRID WITH PUSH
+  ----------------------------------------------------------------->    
+ 
+  	<div class="row">
+  	  <div class="col fs-centered fs-top-50">
+  	  	<h1>PUSH THE GRID</h1>
+   	    <div class="col span-9 centered">
+    		<div class="fs-centered subheader">Elements can be moved to the right by push classes is specified.</div>
+    	</div>	  	  
+	</div></div>
+
+    
+<!----------------------------------------------------------------
+  examples: PUSH THE GRID WITH OFFSET
+  -----------------------------------------------------------------> 
+
+<div id="page_wrap" class="container">
+
+  <div class="row mt10">
+<div class="col span-2">
+<p class="fs-grid-gray fs-centered">
+<span class="pixels">span-2</span>
+<br>
+<span class="percentage"></span>
+<br>
+</p>
+</div>
+<div class="clear"></div>
+<div class=" col span-2 push-20">
+<p class="fs-grid-gray fs-centered">
+<span class="pixels">span-2</span>
+<br>
+<span class="percentage">push 20%</span>
+<br>
+</p>
+</div>
+<div class="clear"></div>
+<div class="col span-2 push-40">
+<p class="fs-grid-gray fs-centered">
+<span class="pixels">span-2</span>
+<br>
+<span class="percentage">push 40%</span>
+<br>
+</p>
+</div>
+<div class="clear"></div>
+<div class="col span-2 push-60">
+<p class="fs-grid-gray fs-centered">
+<span class="pixels">span-2</span>
+<br>
+<span class="percentage">push 60%</span>
+<br>
+</p>
+</div>
+<div class="clear"></div>
+<div class="col span-2 push-80">
+<p class="fs-grid-gray fs-centered">
+<span class="pixels">span-2</span>
+<br>
+<span class="percentage">push 80%</span>
+<br>
+</p>
+</div>
+<div class="clear"></div>
+
+<!----------------------------------------------------------------
+  examples: PUSH THE GRID WITH OFFSET
+  ----------------------------------------------------------------->    
+ 
+  	<div class="row">
+  	  <div class="col fs-centered fs-top-50">
+  	  	<h1>LEFT AND RIGHT</h1>
+   	    <div class="col span-9 centered">
+    		<div class="fs-centered subheader">Elements can be positioned to the left and right.</div>
+    	</div>	  	  
+	</div></div>
+
+
+<div class="col span-6">
+<p class="fs-grid-gray fs-centered">
+<span class="pixels">span-6</span>
+<br>
+<span class="percentage"></span>
+<br>
+</p>
+</div>
+<div class="col span-2 push-33">
+<p class="fs-grid-gray fs-centered">
+<span class="pixels">span-2</span>
+<br>
+<span class="percentage">push 30%</span>
+<br>
+</p>
+</div>
+<div class="clear"></div>
+
+<div class="col span-4">
+<p class="fs-grid-gray fs-centered">
+<span class="pixels">span-4</span>
+<br>
+<span class="percentage"></span>
+<br>
+</p>
+</div>
+<div class="col span-2 push-50">
+<p class="fs-grid-gray fs-centered">
+<span class="pixels">span-2</span>
+<br>
+<span class="percentage">push 50%</span>
+<br>
+</p>
+</div>
+
+</div></div>
+
+</div>
+<div class="clear"></div>
+
+<div class="row">
+  	  <div class="col fs-centered fs-top-100">
+		<p class="fs-line-grey"></p>  	  
+  	  </div>
+</div>
+
+
+<div id="page_wrap" class="container fs-top-30 fs-pb-50">
+ <div class="row mt10">
+    <!-- container -->
+	<footer>
+	  <p style="width:100%;text-align:center;font-size:12px;">Designed and built with all the energy by <a href="http://www.silvankolb.de" target="_blank">Silvan Kolb</a>. Code licensed under MIT, documentation under <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank">CC BY 3.0.</a></p>
+	</footer>
+</div>
+</div>
+</div><!-- page_wrap -->  
+
+</body>
+</html>
